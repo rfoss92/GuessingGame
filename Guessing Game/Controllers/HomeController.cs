@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Web.Mvc;
+using System.Collections;
 
 namespace Guessing_Game.Controllers
 {
@@ -9,7 +10,7 @@ namespace Guessing_Game.Controllers
         public class Globals
         {
             public static Random rnd = new Random();
-            public static int randomNumber = rnd.Next(1, 101);
+            public static ArrayList randomNumbers = new ArrayList();
         }
 
         public ActionResult Index()
@@ -19,18 +20,20 @@ namespace Guessing_Game.Controllers
 
         public ActionResult newRandomNumber()
         {   
-            Globals.randomNumber = Globals.rnd.Next(1, 101);
-            return new EmptyResult();
+            Globals.randomNumbers.Add(Globals.rnd.Next(1, 101));
+            int sessionID = Globals.randomNumbers.Count - 1;
+            return new JsonResult() { Data = sessionID };
         }
 
-        public ActionResult verifyGuess(int input)
+        public ActionResult verifyGuess(int input, int sessionID)
         {
             string hint = "Please enter a number between 1 and 100";
+            int randomNumber = Convert.ToInt32(Globals.randomNumbers[sessionID]);
 
             if (input < 101 && input > 0)
             {
-                hint = (input > Globals.randomNumber) ? "Lower" 
-                        : (input < Globals.randomNumber) ? "Higher" 
+                hint = (input > randomNumber) ? "Lower" 
+                        : (input < randomNumber) ? "Higher" 
                         : "Equal";
             }
             return new JsonResult() { Data = hint };
