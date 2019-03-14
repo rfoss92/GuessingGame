@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Guessing Game",
+    "\\Guessing Game\\App_Data",
+    "\\Guessing Game\\App_Start",
+    "\\Guessing Game\\Content",
+    "\\Guessing Game\\Controllers",
+    "\\Guessing Game\\Models",
+    "\\Guessing Game\\obj",
+    "\\Guessing Game\\Properties",
+    "\\Guessing Game\\Scripts",
+    "\\Guessing Game\\Views"
+  ],
+  "SelectedNode": "\\GuessingGame.sln",
+  "PreviewInSolutionExplorer": false
+}
