@@ -47,7 +47,6 @@ C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\roslyn\vb
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\roslyn\vbc.rsp
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\roslyn\VBCSCompiler.exe
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\Antlr3.Runtime.dll
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\Microsoft.Web.Infrastructure.dll
@@ -60,7 +59,6 @@ C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\System.We
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\System.Web.WebPages.Deployment.dll
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\System.Web.WebPages.dll
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\System.Web.WebPages.Razor.dll
-C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\WebGrease.dll
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\System.Web.Helpers.xml
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\System.Web.Mvc.xml
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\System.Web.Optimization.xml
@@ -78,3 +76,5 @@ C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\obj\Debug\Gue
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\obj\Debug\Guessing Game.dll
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\obj\Debug\Guessing Game.pdb
 C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\obj\Debug\GuessingGame.csprojAssemblyReference.cache
+C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\WebGrease.dll
+C:\Users\rfoss\Dropbox\WebDev\Projects\Guessing Game\Guessing Game\bin\Antlr3.Runtime.dll
