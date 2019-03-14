@@ -16,14 +16,14 @@ namespace Guessing_Game.Controllers
         public ActionResult NewRandomNumber()
         {
             RandomModel.AddNumber();
-            int sessionId = RandomModel.GetSize();
+            var sessionId = RandomModel.GetSize();
             return new JsonResult() { Data = sessionId };
         }
 
         public ActionResult VerifyGuess(int input, int sessionId)
         {
-            string hint = "Please enter a number between 1 and 100";
-            int randomNumber = RandomModel.GetNumber(sessionId);
+            var hint = "Please enter a number between 1 and 100";
+            var randomNumber = RandomModel.GetNumber(sessionId);
 
             if (input < 101 && input > 0)
             {
