@@ -1,34 +1,29 @@
 ﻿using System;
 using System.Web.Mvc;
 using System.Collections;
+using Guessing_Game.Models;
 
 namespace Guessing_Game.Controllers
 {
     public class HomeController : Controller
     {
 
-        public class Globals
-        {
-            public static Random rnd = new Random();
-            public static ArrayList randomNumbers = new ArrayList();
-        }
-
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult newRandomNumber()
-        {   
-            Globals.randomNumbers.Add(Globals.rnd.Next(1, 101));
-            int sessionID = Globals.randomNumbers.Count - 1;
-            return new JsonResult() { Data = sessionID };
+        public ActionResult NewRandomNumber()
+        {
+            RandomModel.AddNumber();
+            int sessionId = RandomModel.GetSize();
+            return new JsonResult() { Data = sessionId };
         }
 
-        public ActionResult verifyGuess(int input, int sessionID)
+        public ActionResult VerifyGuess(int input, int sessionId)
         {
             string hint = "Please enter a number between 1 and 100";
-            int randomNumber = Convert.ToInt32(Globals.randomNumbers[sessionID]);
+            int randomNumber = RandomModel.GetNumber(sessionId);
 
             if (input < 101 && input > 0)
             {

@@ -14,7 +14,7 @@ $("#resetButton").click(() => {
 
 function newRandomNumber() {
     $.ajax({
-        url: "Home/newRandomNumber",
+        url: "Home/NewRandomNumber",
         type: "POST"
     }).done((data) => {
         sessionID = data;
@@ -24,7 +24,7 @@ function newRandomNumber() {
 function verifyGuess() {
     const input = $("#input").val();
     $.ajax({
-        url: "Home/verifyGuess",
+        url: "Home/VerifyGuess",
         type: "POST",
         data: { input, sessionID }
     }).done((data) => {
